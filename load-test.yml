@@ -1,0 +1,11 @@
+config:
+  target: "http://[::1]:3333"
+  phases:
+    - duration: 30
+      arrivalRate: 5
+    - duration: 30
+      arrivalRate: 10
+scenarios:
+  - flow:
+      - get:
+          url: "/route"
